@@ -14,8 +14,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @SpringBootTest
-@Transactional // 이것을 통해서 테스트를 실행할 때 insert 를 하고 테스트가 끝나면 롤백이 된다.
-class MemberServiceIntergrationTest {
+@Transactional // 이것을 통해서 테스트를 실행할 때 insert 를 하고 테스트가 끝나면 롤백이 된다.된다
+class MemberServiceIntegrationTest {
 
     @Autowired MemberService memberService;
     @Autowired MemberRepository memberRepository;
@@ -24,7 +24,7 @@ class MemberServiceIntergrationTest {
     void 회원가입() {
         //given
         Member member = new Member();
-        member.setName("spring");
+        member.setName("spring2");
 
         //when
         Long saveId = memberService.join(member);

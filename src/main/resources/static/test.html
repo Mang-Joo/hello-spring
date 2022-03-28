@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no"/>
+    <title>SeedCloud</title>
+    <style type="text/css">
+        .container::after {
+            background: url("seedeagle_icon copy.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 90%;
+            height: 90%;
+            top: 0;
+            margin: 0 auto;
+            content: "";
+            position: absolute;
+            z-index: -1;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+<div style="max-width: 800px; margin: 0 auto; padding: 10px; box-sizing: border-box; border: 1px solid #ddd; position: relative ">
+    <div style="width: 100%; text-align: center; background: #454545;">
+        <img style="max-width: 50%;" src="https://211.232.94.201:9090/static/media/seedcloud_logo_white.a5b74c6a.png"
+             alt="">
+    </div>
+    <div class="container"  id="imgDiv" style="width: 100%; padding: 30px; border-top: none; box-sizing: border-box; margin: 0 0 20px; position: relative; ">
+        <h2>알림 정보</h2>
+        <h5 style="font-size: 16px; margin: 0 0 15px;">여기엔 이름이 들어갑니다</h5>
+        <table>
+            <tr>
+                <th>시간:</th>
+                <td>{hostName}</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th>유형:</th>
+                <td>{endpointName}</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th>대상:</th>
+                <td>{datacenterName}</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th>대상 유형:</th>
+                <td>{clusterName}</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th>설정 값:</th>
+                <td>{currentEventState}</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th>발생 값:</th>
+                <td>{memoryTotalSize} GB, {memoryUsageSize} GB memory active, {memory}%</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th>현재 값:</th>
+                <td>
+                    {disk}
+                </td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th>단위:</th>
+                <td>
+                    {disk}
+                </td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th>상태:</th>
+                <td>
+                    {disk}
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="font-size: 13px; text-align: center; border-top: 1px solid #ddd; padding-top: 10px;">
+        Copyright © 2019 DFOCUS. All rights reserved.
+    </div>
+</div>
+</body>
+</html>

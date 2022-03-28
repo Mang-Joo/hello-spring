@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 import java.util.Optional;
 
-
+@Service
 @Transactional // JPA는 Transactional 안에서 실행되어야한다.
 public class MemberService {
 
